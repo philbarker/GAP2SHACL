@@ -1,0 +1,28 @@
+Id,Name,Shape Library,Page ID,Contained By,Group,Line Source,Line Destination,Source Arrow,Destination Arrow,Status,Text Area 1,Text Area 2,Text Area 3,comment,dct:creator,dct:date,dct:title,ignoreproperties,note,open or closed,optional or mandatory,prefixes,property,rdf:type,severity,shapeid,shapelabel,target,targettype
+1,Document,,,,,,,,,,Simple book application profile,,,,,,,,,,,,,,,,,,
+2,Page,,,,,,,,,,GAP,,,,Phil Barker,2022-01-14,Simple book application profile,,,,,"sdo: https://schema.org/
+dct: http://purl.org/dc/terms/
+foaf: http://xmlns.com/foaf/0.1/
+xsd: http://www.w3.org/2001/XMLSchema#
+rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+rdfs: http://www.w3.org/2000/01/rdf-schema#",,,,,,,
+3,Text,Standard,2,,,,,,,,Simple book application profile,,,,,,,,,,,,,,,,,,
+4,Text,Standard,2,,,,,,,,Phil Barker,,,,,,,,,,,,,,,,,,
+5,Text,Standard,2,,,,,,,,2022-01-14,,,,,,,,,,,,,,,,,,
+6,Text,Standard,2,,,,,,,,"sdo: https://schema.org/
+dct: http://purl.org/dc/terms/
+foaf: http://xmlns.com/foaf/0.1/
+xsd: http://www.w3.org/2001/XMLSchema#
+rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+rdfs: http://www.w3.org/2000/01/rdf-schema#",,,,,,,,,,,,,,,,,,
+7,Text,Standard,2,,,,,,,,prefixes,,,,,,,,,,,,,,,,,,
+8,Shape,UML,2,,,,,,,,BookShape  «sdo:Book»,"Book: Shape for describing books
+Target: class sdo:Book
+Closed, Mandatory Severity Violation","Title «dct:title» rdf:langString
+ISBN «sdo:isbn» xsd:string *
+",Shape for describing books,,,,,,Closed,Mandatory,,,sdo:Book,Violation,BookShape,Book,sdo:Book,class
+9,Shape,UML,2,,,,,,,,AuthorShape  «foaf:Person»,"Author: Shape for describing authors
+Target: objectsOf dct:creator
+Closed, Mandatory Severity Violation ","Given name «foaf:givenName» xsd:string
+Family name «foaf:familyName» xsd:string ",Shape for describing authors,,,,rdf:type,,Open,Mandatory,,,foaf:Person,Violation,AuthorShape,Author,dct:creator,objectsOf
+10,Line,,2,,,8,9,None,Arrow,,author,1..*,,,,,,,,,,,dct:creator,,,,,,
